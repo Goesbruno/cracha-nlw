@@ -6,22 +6,16 @@
 html, body {
   height: 100%;
 }
+
 body{
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
-
   display: grid;
   place-items: center;
+  
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 
-}
-main {
-  background: url(images/Background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
-  color: var(--grey);
 }
 
 .container {
@@ -30,6 +24,7 @@ main {
   margin-right: auto;
   text-align: center;
 }
+
 
 .avatar {
   width: 10rem;
@@ -71,7 +66,6 @@ a {
 p {
   margin-top: 2rem;
 }
-
 ul {
   margin-top: 4rem;
 
@@ -82,4 +76,114 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+
+@media screen and (max-width: 480px){
+  main {
+    background: url(images/Background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+    color: var(--grey);
+  }
+  
+  body span {
+    display: none;
+    margin-top: -1000px;
+    z-index: 0;
+  }
+  
+  body span:nth-child(2) {
+    display: none;
+    margin-top: -1000px;
+    z-index: 0;
+  }
+
+}
+
+@media screen and (max-width: 960px){
+  main {
+    background: url(images/Background.svg) no-repeat center/cover;
+  
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+    color: var(--grey);
+  }
+  
+  body span {
+    display: none;
+    margin-top: -1000px;
+    z-index: 0;
+  }
+  
+  body span:nth-child(2) {
+    display: none;
+    margin-top: -1000px;
+    z-index: 0;
+  }
+
+}
+
+@media screen and (min-width: 961px){
+  body{
+    --black: hsl(240, 6%, 13%);
+    --grey: hsl(240, 9%, 89%);
+  
+    background-image: url(images/Desktop\ degrade.svg);
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  
+    display: grid;
+    place-items: center;
+    
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  
+  }
+  
+  main {
+    background: url(images/background\ cracha\ desktop.svg) no-repeat center/cover;
+    background-color: hsl(240, 6%, 13%);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+  
+    width: 22.375rem;
+    height: 33.75rem;
+    border-radius: 1rem;
+    margin-top: -280px;
+  
+    color: var(--grey);
+  
+  }
+  .container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -110px;
+    text-align: center;
+  }
+  body span {
+    
+    margin-top: -150px;
+    z-index: 100;
+  }
+  
+  
+  body span:nth-child(2) {
+    margin-top: -255px;
+    z-index: 100;
+  }
+
+  main p a {
+    margin-top: -15px;
+  }
+  main ul {
+    margin-top: 30px;
+  }
 }
