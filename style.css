@@ -144,7 +144,7 @@ ul {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
   
-  }
+    }
   
   main {
     background: url(images/background\ cracha\ desktop.svg) no-repeat center/cover;
@@ -160,30 +160,30 @@ ul {
   
     color: var(--grey);
   
-  }
+   }
   .container {
     max-width: 250px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -110px;
     text-align: center;
-  }
+   }
   body span {
     
     margin-top: -150px;
     z-index: 100;
-  }
+    }
   
   
   body span:nth-child(2) {
     margin-top: -255px;
     z-index: 100;
-  }
+    }
 
   main p a {
     margin-top: -15px;
-  }
+    }
   main ul {
     margin-top: 30px;
-  }
+    }
 }
